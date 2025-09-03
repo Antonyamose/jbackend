@@ -32,7 +32,7 @@ app.post("/upload", upload.single("photo"), async (req, res) => {
     }
 
     // Unique filename
-    const fileName = `jbackend/profilePics/${crypto.randomUUID()}${path.extname(req.file.originalname)}`;
+    const fileName = `jaromjery/profilePics/${crypto.randomUUID()}${path.extname(req.file.originalname)}`;
 
     // Upload to S3
     const uploadParams = {
